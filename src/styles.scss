@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap");
+@import "./scss/_variables";
+body {
+  font-family: $slab;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $onyx;
+}
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+  color: $coral-red;
+}
+
+pre code.language-javascript {
+  background-color: #c7ffc7;
+}
