@@ -3,6 +3,7 @@
 body {
   font-family: $slab;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -46,7 +47,6 @@ h6 {
   color: $coral-red;
 }
 
-pre code.language-javascript {
-  background-color: #c7ffc7;
+p {
+  font-size: 0.8rem;
 }
-
