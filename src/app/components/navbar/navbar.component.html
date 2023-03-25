@@ -1,0 +1,34 @@
+<div class="navbar" [ngClass]="{ shifted: showMenu }">
+  <button
+    class="hamburger"
+    [ngClass]="{ open: showMenu }"
+    (click)="toggleMenu()"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="brand">
+    <!-- Add your brand/logo here -->
+  </div>
+</div>
+
+<div class="content" [ngClass]="{ shifted: showMenu }">
+  <!-- Add your page content here -->
+  <ul>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+  </ul>
+</div>
+
+<div class="hamburger-menu" [ngClass]="{ open: showMenu }">
+  <div class="menu">
+    <!-- Add your menu items here -->
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ul>
+  </div>
+</div>

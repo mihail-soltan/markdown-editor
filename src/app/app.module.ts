@@ -4,9 +4,13 @@ import { MarkdownModule, MarkdownService } from 'ngx-markdown';
 import { AppComponent } from './app.component';
 import "prismjs/prism";
 import "prismjs/plugins/line-numbers/prism-line-numbers.js"
+import "prismjs/components/prism-typescript.min.js"
+import "prismjs/components/prism-javascript.min.js";
+import { NavbarComponent } from './components/navbar/navbar.component'
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

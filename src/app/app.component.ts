@@ -8,10 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ng-markdown-editor';
 
-  code: string = `\`\`\`
-  typescript const dog = () => {console.log("woof")}
+  code: string = `\`\`\`typescript
+  const dog = () => {console.log("woof")}
   
   \`\`\`
 
   `;
+  blockQuote: string = `
+    > Testing block quote
+  `
 }
