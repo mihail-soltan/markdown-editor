@@ -2,6 +2,7 @@
 @import "./scss/_variables";
 body {
   font-family: $slab;
+  margin: 0;
 }
 
 h1,
@@ -48,3 +49,4 @@ h6 {
 pre code.language-javascript {
   background-color: #c7ffc7;
 }
+
