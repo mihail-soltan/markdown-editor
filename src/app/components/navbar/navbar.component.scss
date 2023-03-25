@@ -1,44 +1,61 @@
+@import '../../../scss/variables';
+
 .navbar {
   position: relative;
+  display: flex;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
-  height: 64px;
-  background-color: #fff;
+  background-color: $charcoal;
   z-index: 9999;
-  
+  justify-content: space-between;
   transition: margin-left 0.3s ease-out;
+  h1 {
+      display: inline;
+      color: $white;
+      letter-spacing: 0.25rem;
+    }
 }
-
-.brand {
-  /* Add your brand/logo styles here */
+.logo {
+  padding: 0 2rem;
+  border-right: 1px solid $slate-gray;
+  margin-right: 1rem;
 }
-
+.nav-start {
+    display: flex;
+}
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
 .hamburger {
-  position: absolute;
-  top: 50%;
-  left: 24px;
-  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 24px;
-  width: 32px;
-  padding: 0;
-  background-color: transparent;
+  height: 1.5rem;
+  width: 2rem;
+  padding: 1rem;
   border: none;
   cursor: pointer;
   z-index: 9999;
+  background-color: $onyx;
 }
-
-.hamburger span {
+.doc-name-container{
+    display: flex;
+    align-items: center;
+}
+.file-name > * {
+    margin: 0.25rem;
+}
+span {
   display: block;
-  width: 33px;
+  width: 2rem;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-
-  background: #cdcdcd;
+  background: $white;
   border-radius: 3px;
 
   z-index: 1;
@@ -49,30 +66,30 @@
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-.hamburger span:first-child {
+span:first-child {
   transform-origin: 0% 0%;
 }
 
-.hamburger span:nth-last-child(2) {
+span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-.hamburger.open ~ menu {
+.open ~ menu {
     left: 0;
 }
-.hamburger.open span:nth-child(1),
-.hamburger.open span:nth-child(3) {
+.open span:nth-child(1),
+.open span:nth-child(3) {
   transform: translateY(0) rotate(0);
 }
 
-.hamburger.open span:nth-child(2) {
+.open span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.open span:nth-child(1) {
+.open span:nth-child(1) {
   transform: translateX(4px) rotate(45deg);
 }
 
-.hamburger.open span:nth-child(3) {
+.open span:nth-child(3) {
   transform: translateY(4px) rotate(-45deg);
 }
 .content {
@@ -98,11 +115,10 @@
   overflow-y: auto;
 }
 
-.hamburger-menu.open {
+.openMenu {
   transform: translateX(0);
 }
 
 .menu {
     background-color: #666;
-  /* Add your menu item styles here */
 }
