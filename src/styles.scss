@@ -50,3 +50,27 @@ h6 {
 p {
   font-size: 0.8rem;
 }
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+.primary-btn {
+  display: flex;
+  align-items: center;
+  background-color: $coral-red;
+  color: $white;
+  gap: 0.25rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.25rem;
+  transition: 0.3s ease-in;
+  &:hover {
+    background-color: $dark-salmon;
+  }
+}
+
+@media(max-width: 767px) {
+  .primary-btn {
+    gap: 0;
+  }
+}
