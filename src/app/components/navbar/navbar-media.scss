@@ -1,0 +1,32 @@
+@import "../../../scss/mixins";
+
+@media (max-width: 767px) {
+  .hamburger-menu {
+    @include element-style($width: 38% !important);
+    transform: translateX(-110%);
+  }
+
+  .shifted {
+    margin-left: 60% !important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .hamburger-menu {
+    @include element-style($width: 20% !important);
+    transform: translateX(-110%);
+  }
+
+  .shifted {
+    margin-left: 25% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .primary-btn::content {
+    font-size: 0;
+  }
+  .logo {
+    display: none;
+  }
+}
