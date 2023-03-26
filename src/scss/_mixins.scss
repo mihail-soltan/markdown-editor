@@ -1,0 +1,39 @@
+@mixin transition($properties) {
+  transition: $properties;
+  -webkit-transition: $properties;
+  -moz-transition: $properties;
+  -o-transition: $properties;
+}
+
+@mixin transform($properties) {
+  transform: $properties;
+  -webkit-transform: $properties;
+  -moz-transform: $properties;
+  -o-transform: $properties;
+}
+
+@mixin element-style($top: null, $left: null, $width: null, $height: null, $bg-color: null, $z-index: null) {
+  @if $top != null {
+    top: $top;
+  }
+  @if $left != null {
+    left: $left;
+  }
+  @if $width != null {
+    width: $width;
+  }
+  @if $height != null {
+    height: $height;
+  }
+  @if $bg-color != null {
+    background-color: $bg-color;
+  }
+  @if $z-index != null {
+    z-index: $z-index;
+  }
+}
+
+// Usage example:
+.my-element {
+  @include element-style($top: 10px, $left: 20px, $width: 100px, $bg-color: #ccc, $z-index: 2);
+}
