@@ -2,19 +2,6 @@
 @import "../../../scss/mixins";
 @import "./navbar-media.scss";
 
-.flex {
-  display: flex;
-}
-.relative {
-  position: relative;
-}
-
-.align-center {
-  align-items: center;
-}
-.justify-between {
-  justify-content: space-between;
-}
 .navbar {
   @include element-style(
     $top: 0,
@@ -104,7 +91,7 @@ span {
     $top: 0,
     $left: 0,
     $width: calc(100vw - 80%),
-    $bg-color: #666,
+    $bg-color: $gunmetal,
     $z-index: 9999,
     $height: 100%
   );
@@ -125,9 +112,6 @@ span {
 }
 .doc {
   color: $white;
-}
-.menu {
-  background-color: #666;
 }
 .btn-container {
   display: flex;

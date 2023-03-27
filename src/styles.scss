@@ -69,6 +69,23 @@ button {
   }
 }
 
+.flex {
+  display: flex;
+}
+.relative {
+  position: relative;
+}
+
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
 @media(max-width: 767px) {
   .primary-btn {
     gap: 0;
