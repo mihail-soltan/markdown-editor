@@ -32,7 +32,7 @@
             fill="white"
           />
         </svg>
-        <div style="margin-left: 0.5rem;">
+        <div style="margin-left: 0.5rem">
           <p class="doc-title">Document Name</p>
           <h6 class="doc">welcome.md</h6>
         </div>
@@ -56,7 +56,7 @@
         />
       </svg>
     </button>
-    <button  class="primary-btn">
+    <button class="primary-btn">
       <svg
         width="17"
         height="17"
@@ -82,12 +82,5 @@
 </div>
 
 <div class="hamburger-menu" [ngClass]="{ openMenu: showMenu }">
-  <div class="menu">
-    <!-- Add your menu items here -->
-    <ul>
-      <li>item1</li>
-      <li>item2</li>
-      <li>item3</li>
-    </ul>
-  </div>
+    <app-sidenav></app-sidenav>
 </div>

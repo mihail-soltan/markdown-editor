@@ -7,11 +7,13 @@ import "prismjs/prism";
 import "prismjs/plugins/line-numbers/prism-line-numbers.js"
 import "prismjs/components/prism-typescript.min.js"
 import "prismjs/components/prism-javascript.min.js";
-import { NavbarComponent } from './components/navbar/navbar.component'
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component'
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
