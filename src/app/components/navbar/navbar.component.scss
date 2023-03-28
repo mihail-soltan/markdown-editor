@@ -34,6 +34,10 @@
   padding: 1rem;
   border: none;
   cursor: pointer;
+  transition: 0.3s ease-in;
+  &:hover {
+    background-color: $coral-red;
+  }
 }
 
 span {
