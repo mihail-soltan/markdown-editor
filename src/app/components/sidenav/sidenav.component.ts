@@ -8,18 +8,18 @@ import { SharedService } from 'src/app/services/shared.service';
 })
 export class SidenavComponent implements OnInit{
 
-  lightmode: boolean = false;
+  darkmode: boolean = false;
 
   constructor(private shared: SharedService){}
   
   ngOnInit(){
-    this.shared.lightmode.subscribe((theme) =>{
-      this.lightmode = theme;
+    this.shared.darkmode.subscribe((theme) =>{
+      this.darkmode = theme;
     })
   }
 
   toggleTheme(){
     this.shared.toggleTheme()
-    console.log(this.lightmode)
+    console.log(this.darkmode)
   }
 }

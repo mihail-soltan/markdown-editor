@@ -6,18 +6,18 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class SharedService {
 
-  currentTheme = localStorage.getItem('lightmode');
-  lightmode = new BehaviorSubject(eval(this.currentTheme!));
+  currentTheme = localStorage.getItem('darkmode');
+  darkmode = new BehaviorSubject(eval(this.currentTheme!));
 
   constructor() { }
   
   toggleTheme() {
-    if (this.lightmode.value === false) {
-      this.lightmode.next(true);
-      localStorage.setItem('lightmode', 'true');
+    if (this.darkmode.value === false) {
+      this.darkmode.next(true);
+      localStorage.setItem('darkmode', 'true');
     } else {
-      this.lightmode.next(false);
-      localStorage.setItem('lightmode', 'false');
+      this.darkmode.next(false);
+      localStorage.setItem('darkmode', 'false');
     }
   }
   

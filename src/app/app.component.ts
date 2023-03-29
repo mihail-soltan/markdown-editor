@@ -6,7 +6,7 @@ import { SharedService } from './services/shared.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit{
-  lightmode: boolean = false;
+  darkmode: boolean = false;
 
   constructor(private shared: SharedService){}
   title = 'ng-markdown-editor';
@@ -21,8 +21,8 @@ export class AppComponent implements OnInit{
     > Testing block quote
   `
   ngOnInit(){
-    this.shared.lightmode.subscribe((theme)=>{
-      this.lightmode = theme;
+    this.shared.darkmode.subscribe((theme)=>{
+      this.darkmode = theme;
     })
   }
 }
