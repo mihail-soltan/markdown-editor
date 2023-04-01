@@ -39,9 +39,13 @@
 }
 
 .doc-title {
+  cursor: pointer;
   color: $white;
   font-size: 1rem;
   font-weight: 400;
+  &:hover {
+    color: $coral-red;
+  }
 }
 
 .toggle-container {
@@ -85,7 +89,7 @@
     cursor: pointer;
     display: inline-block;
     position: absolute;
-    left: 4px;
+    left: 1.9rem;
     top: 4px;
     transition: all ease-in-out 0.3s;
     width: 1rem; /* 21px*/
@@ -93,5 +97,5 @@
 }
 
 .toggle input[type='checkbox']:checked ~ label::after {
-    transform: translateX(1.563rem);
+    transform: translateX(-1.6rem);
 }

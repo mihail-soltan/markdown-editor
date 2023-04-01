@@ -12,3 +12,14 @@
 ::ng-deep ul li::marker {
     color: $coral-red;
 }
+.app-container {
+  min-height: 100vh;
+}
+.app-container.darkmode {
+  background-color: $dark-gray;
+  color: $silver;
+  
+  ::ng-deep blockquote {
+    background-color: $charcoal;
+  }
+}
