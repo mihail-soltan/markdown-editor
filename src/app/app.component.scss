@@ -13,7 +13,7 @@
     color: $coral-red;
 }
 .app-container {
-  height: 100%;
+  min-height: 100vh;
 }
 .app-container.darkmode {
   background-color: $dark-gray;

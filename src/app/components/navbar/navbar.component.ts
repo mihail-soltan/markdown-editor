@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   
   showMenu: boolean = false;
+  dialogOpen: boolean = false;
 
   constructor() { 
   }
@@ -18,5 +19,9 @@ export class NavbarComponent {
 
   toggleMenu(){
     this.showMenu = !this.showMenu
+  }
+
+  onDialogAction(visibility: boolean) {
+    this.dialogOpen = visibility
   }
 }

@@ -40,8 +40,9 @@
     </div>
   </div>
   <div class="btn-container">
-    <div id="dialog-overlay"></div>
-    <button class="delete-btn">
+    <div id="dialog-overlay" *ngIf="dialogOpen" (click)="onDialogAction(false)"></div>
+    
+    <button class="delete-btn" (click)="onDialogAction(true)">
       <svg
         width="18"
         height="20"
@@ -79,6 +80,7 @@
 
 <div class="content relative" [ngClass]="{ shifted: showMenu }">
   <!-- Add your page content here -->
+  <app-delete-dialog *ngIf="dialogOpen"></app-delete-dialog>
   <markdown lineNumbers lineHighlight [src]="'../assets/welcome.md'"></markdown>
 </div>
 
